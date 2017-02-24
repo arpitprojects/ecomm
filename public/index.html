@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>
+Pizza Delivery!!
+</title>
+<meta charset="UTF-8"><!--for chars -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<base href="/">
+<link rel="stylesheet" href="vendors/css/materialize.css"/>
+
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<script src="vendors/js/jquery.js"></script>
+<script src="vendors/js/materialize.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="vendors/js/angular.js"></script>
+<script src="vendors/js/angular-animate.js"></script>
+<script src="vendors/js/angular-aria.js"></script>
+<script src="vendors/js/angular-route.js"></script>
+<script src="app/module.js"></script>
+<script src="app/controller.js"></script>
+<script src="app/route.js"></script>
+<script src="app/service.js"></script>
+<script src="app/factory.js"></script>
+<link rel="stylesheet" href="css/main.css" />
+<script src="js/script.js"></script>
+</head>
+<body ng-app="pizza" ng-clock>
+<div ng-controller="mainController">
+<nav>
+<ul id="slide-out" class="side-nav">
+
+<li><a class="waves-effect waves-light" ng-href="#/">Home</a></li>
+<li><a class="waves-effect waves-light" ng-href="#/admin-login">Admin</a></li>
+
+<li><a class="grey-text text-lighten-3" style="color:#000;" href="#/login">Login</a></li>
+        <li><a class="grey-text text-lighten-3" style="color:#000;" href="#/cart">Cart</a></li>
+        <li><a class="grey-text text-lighten-3" style="color:#000;" href="#/signup">Signup</a></li>
+        <li><a class="grey-text text-lighten-3" style="color:#000;" ng-click="logout()" ng-show="temp == '1'" >Logout</a></li>
+        <li><a class="grey-text text-lighten-3" style="color:#000 !important;font-size:1.4rem;" href="#/logout">Hi! {{login}}</a></li>
+<li class="no-padding">
+</li>
+</ul>
+<ul class="right hide-on-med-and-down">
+<li><a class="waves-effect waves-light"  ng-href="#/">Home</a></li>
+<li><a class="waves-effect waves-light"  ng-href="#/admin-login">Admin</a></li>
+<li><a class="grey-text text-lighten-3" style="color:#000;" href="#/login">Login</a></li>
+        <li><a class="grey-text text-lighten-3" style="color:#000;" href="#/cart">Cart</a></li>
+        <li><a class="grey-text text-lighten-3" style="color:#000;" href="#/signup">Signup</a></li>
+         <li><a class="grey-text text-lighten-3" style="color:#000;"  ng-show="temp == '1'" ng-click="logout()">Logout</a></li>
+        <li><a class="grey-text text-lighten-3" style="color:#000 !important;  font-size:1.4rem;">Hi! {{login}}</a></li>
+        
+</ul>
+<a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i id="left" class="fa fa-bars"></i></a>
+
+</nav>
+</div>
+
+
+<div ng-view>
+    
+</div>
+<footer class="page-footer">
+<div class="container">
+<div class="row">
+    <div class="col l6 s12">
+    <h5 class="white-text">Kolkata Pizza Delivery</h5>
+    <p class="grey-text text-lighten-4">Download the app Now!</p>
+    </div>
+    <div class="col l4 offset-l2 s12">
+    <h5 class="white-text">Important Links</h5>
+    <ul>
+        <li><a class="grey-text text-lighten-3" href="#/">Home</a></li>
+        <li><a class="grey-text text-lighten-3" href="#/admin">Admin Panel</a></li>
+        <li><a class="grey-text text-lighten-3" href="#/login">Login</a></li>
+        <li><a class="grey-text text-lighten-3" href="#/cart">Cart</a></li>
+        <li><a class="grey-text text-lighten-3" href="#/signup">Signup</a></li>
+    </ul>
+    </div>
+</div>
+</div>
+<div class="footer-copyright">
+<div class="container">
+© 2016 Kolkata Online
+<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

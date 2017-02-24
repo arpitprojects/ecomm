@@ -1,0 +1,56 @@
+<div>
+<center>
+<h4>{{title}}</h4>
+<a class="waves-effect waves-light btn" ng-href="#/admin-update">Update the Pizzas</a>
+</center>
+<div class="container">
+<div class="row">
+<div class="col s8 offset-s2">
+    <div class="input-field">
+        
+        <input id="icon_prefix" type="text" ng-model="form.name" class="validate">
+        <label for="icon_prefix">Pizza Name</label>
+    </div> 
+    <br />
+    <div class="file-field input-field">
+    <div class="btn">
+    <span>File</span>
+    <input type="file" fd-input ng-model="form.img">
+    </div>
+    <div class="file-path-wrapper">
+    <input class="file-path validate" type="text">
+    </div>
+</div>
+<br />
+    <div class="input-field">
+        
+        <input id="price" ng-model="form.price" type="number" class="validate">
+        <label for="price">Price</label>
+    </div> 
+    <br />
+    <div class="input-field">
+        <input id="quantity" type="number" ng-model="form.quantity" class="validate">
+        <label for="quantity">Quantity</label>
+    </div> 
+    <br />
+    <div class="input-field col s12">
+        <textarea id="desc" ng-model="form.desc" class="materialize-textarea"></textarea>
+        <label for="desc">Description</label>
+    </div>
+    <br />
+     <div class="input-field col s12">
+    <select ng-model="form.veg">
+      <option value="" disabled selected>Choose your option</option>
+      <option  value="veg">Veg</option>
+      <option  value="non-veg">Non-Veg</option>
+      
+    </select>
+    <label>Select Veg/Non-Veg</label>
+  </div>
+  <br />
+  <br />
+  <a class="waves-effect waves-light btn" ng-click="create()">Submit</a>
+</div>
+</div>
+</div>
+</div>

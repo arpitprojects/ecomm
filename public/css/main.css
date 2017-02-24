@@ -1,0 +1,32 @@
+body,html{
+    font-family: 'Lato' !important; 
+}
+nav{
+    background-color:#00b8d4 ;
+}
+.img{
+    max-width:100%;
+    display: block;
+    width:100%;
+    object-fit:cover;
+    position:relative;
+    top:-2px;
+    height:300px;
+}
+.overlay{
+    height:300px;
+    width:100%;
+    position:absolute;
+    top:0px;
+    background-color:rgba(0,0,0,0.7);
+}
+.txt{
+    position: relative;
+    top:-200px;
+    color:white;
+    
+}
+footer{
+   background-color:#00b8d4 !important ;
+   color:#fff; 
+}

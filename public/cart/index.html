@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <center>
+               <h5> {{title}}</h5>
+            </center>
+        </div>
+    </div>
+</div>
+<br /><br />
+<!--<div class="container">-->
+    <div class="row">
+      <div class="col s6 m6 l6" ng-repeat="h in home track by $index">
+          <div class="card">
+            <div class="card-content white-text">
+                <center>
+                     <p style="font-family:'Lato';color:#000 !important;font-size:14px;">{{h.date_booking}}</p>
+                    <p style="font-family:'Lato';color:#000 !important;font-size:14px;">{{h.time}}</p>
+                     <img ng-src="/img/{{h.img}}" style="max-width:100%;display:block;"/>
+                </center>  
+              <center><span class="card-title" style="font-size:18px; color:#000; text-align:center;font-weight:600;">Cheese Piza</span>
+              </center><p class="card-title" style="font-size:14px; color:#000;line-height:18px !important;font-weight:600"><span style="color:#000;font-weight:600; text-align:center;font-weight:600;">Desc</span>  Extra Cheese Pizza</p>
+            </div>
+            <div class="card-action">
+              <a href="#">$ 99</a>
+              <a href="#" style="color:red ;">9 Left</a>
+               <br />
+               <br />
+               <br />
+              
+            </div>
+          </div>
+        </div>
+        <center>
+         <a class="waves-effect waves-light btn" ng-click="check()">Confirm Order</a>
+        </center>
+    </div>
